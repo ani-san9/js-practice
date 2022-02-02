@@ -1,0 +1,28 @@
+Mukanbetkali Sanzhar CS2112
+
+1) var name = "Mukanbetkali Sanzhar";
+   var group = "CS2112";
+
+2) var newDate = new Date();
+   var year = newDate.getFullYear();
+   var day = newDate.getDay();
+   var date = newDate.getDate();
+   var month = newDate.getMonth();
+   var time = newDate.toLocaleTimeString();
+ alert (name + " " + group);
+ alert ("Year: " + year + "\n" + "Today is: " + day + "\n" + "Month: " + month + "\n" + "Date: " + date + "\n" + "current Time is: " + time);
+
+3) today=new Date();
+  var graduation=new Date(today.getFullYear(), 5, 30);
+ if (today.getMonth()==5 && today.getDate()>30) 
+{
+ graduation.setFullYear(graduation.getFullYear()+2); 
+}  
+  var one_day=1000*60*60*24;
+ console.log(Math.ceil((graduation.getTime()-today.getTime())/(one_day))+ " days left until the graduating");
+
+4) var num1 = prompt("1st number");
+var num2 = prompt("2nd number");
+var mul=(num1*num2);
+var div=(num1/num2);
+alert ("when multiply = "+ mul+"\n"+"when divide = "+div);
